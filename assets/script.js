@@ -5,14 +5,14 @@ var questions = [
         correctAnswer: "bloo",
     },
     {
-        question: "blah blah?",
+        question: "blah blor?",
         answers: [bloo, blorp, blap],
-        correctAnswer: "bloo",
+        correctAnswer: "blorp",
     },
     {
-        question: "blah blah?",
+        question: "blor blah?",
         answers: [bloo, blorp, blap],
-        correctAnswer: "bloo",
+        correctAnswer: "blap",
     }
 ]
 console.log(questions[2].answers[2])
@@ -22,19 +22,36 @@ var timeLeft
 var score
 var btn1 = querySelector("#btn-1")
 
-// startGame
+function init() {
+    getScores();
+  }
+
+function startQuiz {
+    startButton.addEventListener("click", startQuiz);
+
+    startTimer()
+}
     // triggered event listener on start game button
-    // start timer
     // setup 1st question
     // loadQuestion()
 
 function startTimer (){
     timer = setInterval(function(){
         timerCount--;
-        ti
+        timerElement.textContent = timerCount;
+        if (timerCount >=0){
+            if (isPass && timerCount > 0) {
+        clearInterval(timer);
+        passQuiz();
+      }
     }
-        )
+    if (timerCount === 0) {
+      clearInterval(timer);
+      failQuiz();
+    }
+  }, 1000);
 }
+
     // setInterval()
     // render to page
 
@@ -43,7 +60,9 @@ function startTimer (){
     //render the question and multipe choices to the page
     // btn1.textContent =
 
-// checkAnswer
+function checkAnswer(answer) {
+    
+}
     // check which button user clicked
     // compare the choice with correct answer
     // act on right/wrong answer

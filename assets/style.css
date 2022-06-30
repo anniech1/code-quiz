@@ -1,0 +1,44 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    color: black;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.start-button {
+    box-align: center;
+}
+
+.quiz-question {
+    text-align: center;
+}
+
+.quiz-answers {
+    text-align: center;
+}
+
+timer {
+    box-align: right;
+}
+
+.timer-text {
+    text-align: center;
+}
+
+.timer-count {
+    text-align: center;
+}
+
+.high-scores {
+    box-align: left;
+    display: block;
+    background-color:	#9ac9fc;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 80px;
+}
